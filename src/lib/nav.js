@@ -1,18 +1,18 @@
 const navLinks = [
     {
-        sectionName: 'company',
+        sectionName: 'Home',
         href: '/#company',
         isBookmark: true
     },
     {
-        sectionName: 'marketplace',
-        href: '/#marketplace',
-        isBookmark: true
+        sectionName: 'Marketplace',
+        href: '/marketplace',
+        isBookmark: false
     },
     {
-        sectionName: 'features',
-        href: '/#features',
-        isBookmark: true
+        sectionName: 'Services',
+        href: '/services',
+        isBookmark: false
     },
     {
         sectionName: 'team',
@@ -20,7 +20,7 @@ const navLinks = [
         isBookmark: true
     },
     {
-        sectionName: 'about',
+        sectionName: 'About',
         href: '/about',
         isBookmark: false
     },

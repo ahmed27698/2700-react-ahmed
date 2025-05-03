@@ -2,6 +2,7 @@ import { FaHamburger } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import navLinks from "../lib/nav";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Nav() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -16,7 +17,7 @@ export default function Nav() {
                 {navLinks.map(({ href, sectionName }) => {
                     return (
                         <li key={sectionName} className="text-gray-900 font-medium text-base hidden md:block">
-                            <a href={href}>{sectionName}</a>
+                            <Link to={href}>{sectionName}</Link>
                         </li>
                     )
                 }

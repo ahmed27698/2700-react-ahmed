@@ -8,9 +8,9 @@ const ProductCard = ({ product }) => {
                 <h3 className="text-xl text-center">{product.title}</h3>
 
                 <div>
-                    <img src={product.thumbnail} className="max-w-full" alt="" />
+                    <img src={product.thumbnail} className="max-w-full" alt="image" />
 
-                    <Rating rate={product.rating} roundMethod="ceil" />
+                    <Rating rate={product.rating} roundMethod="ceil" showRateText={false}/>
                 </div>
             </div>
         </Link>

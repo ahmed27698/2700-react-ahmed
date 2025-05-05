@@ -36,10 +36,10 @@ export default function Product() {
         <div className='p-5'>
             <div className="flex gap-4">
                 <h3 className="text-3xl">{product.title}</h3>
-                <Rating rate={product.rating} />
+                <Rating rate={product.rating} showRateText={true}/>
             </div>
 
-            <img src={product.thumbnail} alt="" />
+            <img src={product.thumbnail} alt="image" />
 
         </div>
     )

@@ -1,6 +1,6 @@
 import { BsStarFill } from "react-icons/bs";
 
-export default function Rating({ rate, roundMethod = 'round' }) {
+export default function Rating({ rate, roundMethod = 'round' , showRateText = false}) {
 
     console.log('rate', rate)
 
@@ -26,7 +26,7 @@ export default function Rating({ rate, roundMethod = 'round' }) {
 
     return (
         <div className="flex gap-2 items-center">
-            <span>{rate}</span>
+            {showRateText && <span>{rate}</span>}
             <div className="flex gap-1 text-yellow-400">
                 {[...Array(stars)].map((_, i) => <BsStarFill key={i} />)}
             </div>
